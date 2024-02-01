@@ -1,3 +1,8 @@
+body {
+  @include DMSans-400;
+  font-size: 1rem;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;

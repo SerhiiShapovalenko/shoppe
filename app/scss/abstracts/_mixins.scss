@@ -1,9 +1,19 @@
 //fonts
 
-// @mixin quicksand-400 {
-//   font-family: 'Quicksand-Regular', sans-serif;
-//   font-weight: 400;
-// }
+@mixin DMSans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+@mixin DMSans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+@mixin DMSans-700 {
+  font-family: 'DMSans-Medium-Bold', sans-serif;
+  font-weight: 700;
+}
 
 // @mixin quicksand-500 {
 //   font-family: 'Quicksand-Medium', sans-serif;
