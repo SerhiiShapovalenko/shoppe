@@ -1,0 +1,59 @@
+.header {
+  padding: 65px 0 16px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    margin-right: 90px;
+  }
+
+  &__icons {
+    margin-left: 45px;
+  }
+
+  &__navigation,
+  &__list,
+  &__icons {
+    display: flex;
+  }
+
+  &__icons-item + .menu__icons-item {
+    margin-left: 45px;
+  }
+
+  &__list-item + .menu__list-item {
+    margin-left: 65px;
+    position: relative;
+  }
+
+  &__list-item:last-child::after {
+    content: '';
+    position: absolute;
+    background-color: #707070;
+    width: 1px;
+    height: 17px;
+    margin-left: 45px;
+  }
+
+  &__list-link {
+    color: #000;
+  }
+
+  &__icons-icon {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+  }
+}
+
+.menu__icons-icon {
+  width: 21px;
+  height: 21px;
+}

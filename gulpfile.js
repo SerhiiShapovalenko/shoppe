@@ -16,6 +16,7 @@ const svgSprite = require('gulp-svg-sprite');
 const sourcemaps = require('gulp-sourcemaps');
 const include = require('gulp-include');
 const uglifycss = require('gulp-uglifycss');
+const mediaQueries = require('gulp-group-css-media-queries');
 
 //styles
 
@@ -25,6 +26,7 @@ function styles() {
     .pipe(scss({ outputStyle: 'expanded' }))
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
     .pipe(concat('style.css'))
+    .pipe(mediaQueries())
     .pipe(dest('app/css'))
     .pipe(uglifycss())
     .pipe(concat('style.min.css'))
@@ -34,11 +36,9 @@ function styles() {
 }
 
 // js
+
 function scripts() {
-  return src([
-    'node_modules/swiper/swiper-bundle.js',
-    'app/js/main.js',
-  ])
+  return src(['node_modules/swiper/swiper-bundle.js', 'app/js/main.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
@@ -60,20 +60,20 @@ function images() {
 // sprite
 
 function sprite() {
-  return src('app/images/*.svg')
+  return src('app/images/**/*.svg')
     .pipe(
       svgSprite({
         mode: {
           stack: {
-            sprite: '../sprite.svg',
+            sprite: '../sprite.svg', // Шлях для збереження спрайта
             example: true,
+            symbol: true,
           },
         },
       })
     )
     .pipe(dest('app/images'));
 }
-
 // fonts
 
 function fonts() {
@@ -101,6 +101,14 @@ function pages() {
     .pipe(browserSync.stream());
 }
 
+// media
+
+function queries() {
+  return src('app/css/style.css')
+    .pipe(mediaQueries())
+    .pipe(browserSync.stream());
+}
+
 // watch
 
 function watching() {
@@ -123,13 +131,13 @@ function cleanDist() {
 function building() {
   return src(
     [
-      'app/css/style.min.css',
+      'app/css/*.css',
       '!app/images/**/*.html',
       'app/images/*.*',
       '!app/images/*.svg',
       'app/images/sprite.svg',
       'app/fonts/*.*',
-      'app/js/main.min.js',
+      'app/js/*.js',
       'app/**/*.html',
     ],
     { base: 'app' }
@@ -137,6 +145,7 @@ function building() {
 }
 
 exports.styles = styles;
+exports.queries = queries;
 exports.images = images;
 exports.fonts = fonts;
 exports.pages = pages;
