@@ -31,11 +31,14 @@
       background-color: #fff;
       margin: 0;
       transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out;
     }
   }
 
   &__list--active {
-    transform: translateY(0);
+    @include onMobile {
+      transform: translateY(0);
+    }
   }
 
   &__list-item {
@@ -115,7 +118,11 @@
   }
 
   &__list-link {
-    color: #000;
+    color: $default-color;
+  }
+
+  &__list--active {
+    transform: translateY(0);
   }
 
   &__icons-icon {
@@ -131,13 +138,14 @@
     justify-content: center;
     width: 11px;
     height: 11px;
-    border: 1px solid #000;
+    border: 1px solid $default-color;
     border-radius: 50%;
     font-size: 7px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 4;
+    color: $default-color;
     background-color: #fff;
     transform: translate(3px, -2px);
   }
@@ -165,6 +173,10 @@
       display: none;
     }
 
+    @include onDesktop {
+      display: none;
+    }
+
     @include onMobile {
       display: flex;
     }
@@ -176,7 +188,8 @@
     position: absolute;
     width: 100%;
     height: 1.8px;
-    background-color: #000;
+    background-color: $default-color;
+    transition: width 0.3s ease-in-out;
   }
 
   &__btn span {
@@ -199,4 +212,12 @@
     right: 0;
     bottom: 0;
   }
+
+  &__btn--close::after {
+    width: 100%;
+  }
+}
+
+body._lock {
+  overflow: hidden;
 }
