@@ -32,6 +32,7 @@
       margin: 0;
       transform: translateY(-100%);
       transition: transform 0.3s ease-in-out;
+      z-index: 100;
     }
   }
 
@@ -58,9 +59,13 @@
 
   &__icons-item--cart {
     position: relative;
+    @include onMobile {
+      z-index: 100;
+    }
   }
 
   &__icons-icon--cart {
+    position: relative;
     @include onMobile {
       position: relative;
       width: 18px;

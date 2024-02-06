@@ -8,3 +8,16 @@ menuBtn.addEventListener('click', () => {
   menuList.classList.toggle('menu__list--active');
   menuBtn.classList.toggle('menu__btn--close');
 });
+
+// swiper
+
+const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
