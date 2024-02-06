@@ -1,0 +1,49 @@
+.catalog {
+  margin: 65px 0 265px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__top-title {
+    font-size: 2.0625rem;
+    font-weight: 500;
+    line-height: 2.6875rem;
+  }
+
+  &__top-link {
+    color: $accent-color;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    text-transform: capitalize;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 85px;
+    column-gap: 55px;
+  }
+
+  &__list-img img,
+  .catalog__list-img source {
+    margin-bottom: 25px;
+  }
+
+  &__list-content-name {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-bottom: 16px;
+  }
+
+  &__list-content-price {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    color: $accent-color;
+  }
+}
