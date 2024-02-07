@@ -31,6 +31,7 @@
   &__list-img img,
   .catalog__list-img source {
     margin-bottom: 25px;
+    opacity: 0.4;
   }
 
   &__list-content-name {
@@ -45,5 +46,28 @@
     font-weight: 500;
     line-height: 1.625rem;
     color: $accent-color;
+  }
+
+  &__icons-link {
+    position: relative;
+    display: block;
+  }
+
+  &__list-picture {
+    position: relative;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__icons-icon {
+    width: 21px;
+    height: 21px;
   }
 }

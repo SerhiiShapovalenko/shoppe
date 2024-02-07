@@ -65,7 +65,7 @@ function sprite() {
       svgSprite({
         mode: {
           stack: {
-            sprite: '../sprite.svg', // Шлях для збереження спрайта
+            sprite: '../sprite.svg',
             example: true,
             symbol: true,
           },
