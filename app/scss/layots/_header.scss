@@ -57,6 +57,12 @@
     }
   }
 
+  &__icons-button {
+    display: block;
+    border: none;
+    background: transparent;
+  }
+
   &__icons-item--cart {
     position: relative;
     @include onMobile {
