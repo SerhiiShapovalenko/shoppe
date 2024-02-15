@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+  display: none;
+
+  @include onMobile {
+    display: block;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 4px;
+    background: #efefef;
+    height: 32px;
+    padding: 10px 10px 10px 30px;
+    width: 100%;
+    margin-bottom: 16px;
+    outline: none;
+  }
+}
+
+.search::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 10px;
+  left: 10px;
+  background: url('../images/icons/searcher-input.svg');
+}

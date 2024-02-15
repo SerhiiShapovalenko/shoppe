@@ -1,0 +1,11 @@
+body {
+  @include DMSans-400;
+  font-size: 1rem;
+  letter-spacing: 0%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

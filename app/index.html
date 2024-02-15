@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoppe</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <img src="images/logo.svg" alt="" class="logo" />
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="" class="menu__list-link">Shop</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__list-link">Blog</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__list-link">Our Story</a>
+              </li>
+            </ul>
+            <ul class="menu__icons">
+              <li class="menu__icons-item">
+                <button href="#" class="menu__icons-button">
+                  <svg class="menu__icons-icon menu__icons-icon--searcher">
+                    <use xlink:href="images/sprite.svg#icons--searcher"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="menu__icons-item menu__icons-item--cart">
+                <a href="#" class="menu__icons-link">
+                  <svg class="menu__icons-icon">
+                    <use xlink:href="images/sprite.svg#icons--cart"></use>
+                  </svg>
+                  <span class="menu__cart-count">1</span>
+                </a>
+              </li>
+              <li class="menu__icons-item menu__icons-item--profile">
+                <a href="#" class="menu__icons-link">
+                  <svg class="menu__icons-icon">
+                    <use xlink:href="images/sprite.svg#icons--profile"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button class="menu__btn"><span></span></button>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+
+<main>
+  <div class="container">
+    <div class="search">
+      <input type="search" class="search__input" placeholder="Search" />
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="background-image: url('images/swiper-bg.jpeg')"
+        >
+          <dl class="swiper-slide__list">
+            <dt class="swiper-slide__list-name">Gold big hoops</dt>
+            <dd class="swiper-slide__list-price">$ 68,00</dd>
+          </dl>
+          <a class="swiper-slide__link" href="#">View Product</a>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url('images/swiper-bg.jpeg')"
+        >
+          <dl class="swiper-slide__list">
+            <dt class="swiper-slide__list-name">Gold big hoops</dt>
+            <dd class="swiper-slide__list-price">$ 68,00</dd>
+          </dl>
+          <a class="swiper-slide__link" href="#">View Product</a>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url('images/swiper-bg.jpeg')"
+        >
+          <dl class="swiper-slide__list">
+            <dt class="swiper-slide__list-name">Gold big hoops</dt>
+            <dd class="swiper-slide__list-price">$ 68,00</dd>
+          </dl>
+          <a class="swiper-slide__link" href="#">View Product</a>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url('images/swiper-bg.jpeg')"
+        >
+          <dl class="swiper-slide__list">
+            <dt class="swiper-slide__list-name">Gold big hoops</dt>
+            <dd class="swiper-slide__list-price">$ 68,00</dd>
+          </dl>
+          <a class="swiper-slide__link" href="#">View Product</a>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url('images/swiper-bg.jpeg')"
+        >
+          <dl class="swiper-slide__list">
+            <dt class="swiper-slide__list-name">Gold big hoops</dt>
+            <dd class="swiper-slide__list-price">$ 68,00</dd>
+          </dl>
+          <a class="swiper-slide__link" href="#">View Product</a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <section class="catalog">
+      <div class="catalog__top">
+        <h2 class="catalog__top-title">Shop The Latest</h2>
+        <a href="#" class="catalog__top-link">View All</a>
+      </div>
+      <ul class="catalog__list">
+        <li class="catalog__list-item">
+          <div class="catalog__list-picture">
+            <a href="#" class="catalog__list-link">
+              <picture class="catalog__list-img">
+                <source srcset="images/catalog/catalog-img-1.webp" />
+                <img
+                  src="images/catalog/catalog-img-1.jpeg"
+                  alt="Lira Earrings"
+                />
+              </picture>
+            </a>
+            <div class="catalog__list-icons catalog__icons">
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--cart">
+                  <use xlink:href="images/sprite.svg#icons--cart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--heart">
+                  <use xlink:href="images/sprite.svg#icons--heart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--eye">
+                  <use xlink:href="images/sprite.svg#icons--eye"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <dl class="catalog__list-сontent">
+            <dt class="catalog__list-content-name">Lira Earrings</dt>
+            <dd class="catalog__list-content-price">$ 20,00</dd>
+          </dl>
+        </li>
+        <li class="catalog__list-item">
+          <a href="#" class="catalog__list-link">
+            <div class="catalog__list-picture">
+              <a href="#" class="catalog__list-link">
+                <picture class="catalog__list-img">
+                  <source srcset="images/catalog/catalog-img-2.webp" />
+                  <img
+                    src="images/catalog/catalog-img-2.jpeg"
+                    alt="Lira Earrings"
+                  />
+                </picture>
+              </a>
+              <div class="catalog__list-icons catalog__icons">
+                <button href="#" class="catalog__icons-button">
+                  <svg class="catalog__icons-icon catalog__icons-icon--cart">
+                    <use xlink:href="images/sprite.svg#icons--cart"></use>
+                  </svg>
+                </button>
+                <button href="#" class="catalog__icons-button">
+                  <svg class="catalog__icons-icon catalog__icons-icon--heart">
+                    <use xlink:href="images/sprite.svg#icons--heart"></use>
+                  </svg>
+                </button>
+                <button href="#" class="catalog__icons-button">
+                  <svg class="catalog__icons-icon catalog__icons-icon--eye">
+                    <use xlink:href="images/sprite.svg#icons--eye"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </a>
+          <dl class="catalog__list-сontent">
+            <dt class="catalog__list-content-name">Hal Earrings</dt>
+            <dd class="catalog__list-content-price">$ 25,00</dd>
+          </dl>
+        </li>
+        <li class="catalog__list-item">
+          <div class="catalog__list-picture">
+            <a href="#" class="catalog__list-link">
+              <picture class="catalog__list-img">
+                <source srcset="images/catalog/catalog-img-3.webp" />
+                <img
+                  src="images/catalog/catalog-img-3.jpeg"
+                  alt="Lira Earrings"
+                />
+              </picture>
+            </a>
+            <div class="catalog__list-icons catalog__icons">
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--cart">
+                  <use xlink:href="images/sprite.svg#icons--cart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--heart">
+                  <use xlink:href="images/sprite.svg#icons--heart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--eye">
+                  <use xlink:href="images/sprite.svg#icons--eye"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <dl class="catalog__list-сontent">
+            <dt class="catalog__list-content-name">Kaede Hair Pi</dt>
+            <dd class="catalog__list-content-price">$ 30,00</dd>
+          </dl>
+        </li>
+        <li class="catalog__list-item">
+          <div class="catalog__list-picture">
+            <a href="#" class="catalog__list-link">
+              <picture class="catalog__list-img">
+                <source srcset="images/catalog/catalog-img-4.webp" />
+                <img
+                  src="images/catalog/catalog-img-4.jpeg"
+                  alt="Lira Earrings"
+                />
+              </picture>
+            </a>
+            <div class="catalog__list-icons catalog__icons">
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--cart">
+                  <use xlink:href="images/sprite.svg#icons--cart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--heart">
+                  <use xlink:href="images/sprite.svg#icons--heart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--eye">
+                  <use xlink:href="images/sprite.svg#icons--eye"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <dl class="catalog__list-сontent">
+            <dt class="catalog__list-content-name">Kaede Hair Pi</dt>
+            <dd class="catalog__list-content-price">$ 30,00</dd>
+          </dl>
+        </li>
+        <li class="catalog__list-item">
+          <div class="catalog__list-picture">
+            <a href="#" class="catalog__list-link">
+              <picture class="catalog__list-img">
+                <source srcset="images/catalog/catalog-img-5.webp" />
+                <img
+                  src="images/catalog/catalog-img-5.jpeg"
+                  alt="Lira Earrings"
+                />
+              </picture>
+            </a>
+            <div class="catalog__list-icons catalog__icons">
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--cart">
+                  <use xlink:href="images/sprite.svg#icons--cart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--heart">
+                  <use xlink:href="images/sprite.svg#icons--heart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--eye">
+                  <use xlink:href="images/sprite.svg#icons--eye"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <dl class="catalog__list-сontent">
+            <dt class="catalog__list-content-name">Plaine Necklace</dt>
+            <dd class="catalog__list-content-price">$ 19,00</dd>
+          </dl>
+        </li>
+        <li class="catalog__list-item">
+          <div class="catalog__list-picture">
+            <a href="#" class="catalog__list-link">
+              <picture class="catalog__list-img">
+                <source srcset="images/catalog/catalog-img-6.webp" />
+                <img
+                  src="images/catalog/catalog-img-6.jpeg"
+                  alt="Lira Earrings"
+                />
+              </picture>
+            </a>
+            <div class="catalog__list-icons catalog__icons">
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--cart">
+                  <use xlink:href="images/sprite.svg#icons--cart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--heart">
+                  <use xlink:href="images/sprite.svg#icons--heart"></use>
+                </svg>
+              </button>
+              <button href="#" class="catalog__icons-button">
+                <svg class="catalog__icons-icon catalog__icons-icon--eye">
+                  <use xlink:href="images/sprite.svg#icons--eye"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="catalog__list-dicount">
+              <span>-%21</span>
+            </div>
+          </div>
+          <dl class="catalog__list-сontent">
+            <dt class="catalog__list-content-name">Yuki Hair Pin Set of 3</dt>
+            <div class="catalog__price-container">
+              <dd class="catalog__list-content-price catalog__price">
+                $ 29,00
+              </dd>
+              <dd class="catalog__list-content-price catalog__price-new">
+                $ 25,00
+              </dd>
+            </div>
+          </dl>
+        </li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer__top">
+      <nav class="footer__list">
+        <ul class="footer__list-item"><a href="footer__list-link">CONTACT</a></ul>
+        <ul class="footer__list-item"><a href="footer__list-link">TERMS OF SERVICES</a></ul>
+        <ul class="footer__list-item"><a href="footer__list-link">SHIPPING AND RETURNS</a></ul>
+      </nav>
+      <div class="footer__input">
+        <input type="text" placeholder="SHIPPING AND RETURNS">
+        <button type="submit" class="footer__input-button"></button>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p сlass="footer__text">© 2021 Shelly. Terms of use and privacy policy.</p>
+      <div class="footer__icons">
+        <svg class="footer__icon footer__icon--linkedin">
+          <use xlink:href="images/sprite.svg#icons--linkedin"></use>
+        </svg>
+        <svg class="footer__icon footer__icon--facebook">
+          <use xlink:href="images/sprite.svg#icons--facebook"></use>
+        </svg>
+        <svg class="footer__icon footer__icon--instagram">
+          <use xlink:href="images/sprite.svg#icons--instagram"></use>
+        </svg>
+        <svg class="footer__icon footer__icon--twitter">
+          <use xlink:href="images/sprite.svg#icons--twitter"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.min.js"></script>
+</body>
+</html>
